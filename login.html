@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 3px solid red; */
+            border-bottom: 4px solid black;
+            /* background-color: white; */
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .logoSpace,
+        .navbar,
+        .login {
+            /* border: 2px solid blue; */
+        }
+
+        .logoSpace img {
+            margin-top: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .logoSpace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .webName {
+            font-size: 1.42rem;
+        }
+
+        .navbar li {
+            display: flex;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li a {
+            border: 1px solid black;
+            padding: 8px;
+            text-decoration: none;
+            margin: 40px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(203, 195, 185);
+
+        }
+
+        
+
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        /* body  */
+        .mainBody{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+        .loginSpace{
+            border: 3px solid black;
+            width: 40vw;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 4px 4px 15px rgb(60, 56, 56);
+        }
+        .loginSpace h1{
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        .elements{
+            margin: 20px;
+            font-size: 1.7rem;
+        }
+        .elements input{
+            height: 35px;
+            width: 270px;
+            border-radius: 20px;
+
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        #element7 a{
+            font-size: 1.2rem;
+        }
+        .name{
+            margin-left: 48px;
+        }
+        .zone{
+            margin-left: 57px;
+        }
+        .userid{
+            margin-left: 32px;
+        }
+        .password{
+            margin-left: 8px;
+        }
+        #submit, #reset{
+            cursor: pointer;
+            height: 30px;
+            width: auto;
+            padding: 3px;
+            font-size: 1.2rem;
+            
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+
+        <div class="logoSpace">
+
+
+            <a href="index.html"><img src="logo1.jpeg" alt=""></a>
+
+
+
+
+
+        </div>
+
+        <nav class="navbar">
+
+            <!-- <li><a id="Home" href="#">Home</a></li> -->
+            <li><a id="test" href="#">Learn About Mental Health</a></li>
+            <li><a id="aboutUs" href="#">About Us</a></li>
+            <li><a id="contact" href="contactUs.html">Contact Us</a></li>
+
+
+        </nav>
+        
+
+    </header>
+    <div class="mainBody">
+    <div class="loginSpace">
+        <h1>Login (Only For Clinical Use)</h1>
+        <form action="patientRegistration.html" class="login">
+        <div class="elements" id="element1">
+          Name: <input type="text" class="name" name="name" placeholder="Enter The Name">
+        </div>
+        <div class="elements" id="element2">
+            Zone: <input type="text" class="zone" name="zone" placeholder="Enter The Zone">
+          </div>
+          <div class="elements" id="element3">
+            User Id: <input type="text" class="userid" name="zone" placeholder="Enter User Id">
+          </div>
+          <div class="elements" id="element4">
+            Password: <input type="password" class="password" name="password" placeholder="Enter Password">
+          </div>
+          <div class="elements" id="element5">
+            <input type="submit" value="Login" id="submit">
+        </div>
+        <div class="elements" id="element6">
+            <input type="reset" value="Reset All" id="reset">
+        </div>
+        <div class="elements" id="element7">
+            <a href="#">If don't have an account Sign Up</a>
+
+        </div>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>

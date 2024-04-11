@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 3px solid red; */
+            border-bottom: 4px solid black;
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logoSpace,
+        .navbar,
+        .login {
+            /* border: 2px solid blue; */
+        }
+
+        .logoSpace img {
+            margin-top: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .logoSpace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .webName {
+            font-size: 1.42rem;
+        }
+
+        .navbar li {
+            display: flex;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li a {
+            border: 1px solid black;
+            padding: 8px;
+            text-decoration: none;
+            margin: 40px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(203, 195, 185);
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 20px;
+        }
+
+        .loginSpace {
+            margin: 4px;
+        }
+
+        .login button {
+            cursor: pointer;
+            color: white;
+            background-color: #0e0e69;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .login button:hover {
+            background-color: #3d3d91;
+
+        }
+
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        #btn a, #testbtn a{
+            text-decoration: none;
+            color: white;
+
+        }
+        #btn a:visited, #testbtn a:visited{
+            color: white;
+        }
+        /* body */
+
+        .mainContact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 10px;
+        }
+        .mainContact h1{
+            margin-bottom: 30px;
+        }
+        .contactForm {
+            margin: 20px;
+            border: 3px solid black;
+            border-radius: 15px;
+            box-shadow: 5px 5px 20px black;
+
+        }
+
+        .formElement {
+            margin: 20px;
+            padding: 10px;
+            font-size: 1.6rem;
+        }
+
+        .formElement input {
+            height: 35px;
+            width: 270px;
+            border-radius: 20px;
+
+        }
+
+        #submit {
+            cursor: pointer;
+            height: 30px;
+            width: auto;
+            padding: 3px;
+            font-size: 1.3rem;
+            margin-left: 39%;
+            border-radius: 15px;
+            
+
+        }
+        
+        #submit:hover {
+            background-color: aliceblue;
+        }
+
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .name input {
+            margin-left: 120px;
+        }
+
+        .mobileNo input {
+            margin-left: 3.5%;
+        }
+
+        .mailId input {
+            margin-left: 105px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="logoSpace">
+
+
+            <a href="index.html"><img src="logo1.jpeg" alt=""></a>
+
+            <div class="webName">
+
+            </div>
+
+
+
+        </div>
+
+        <nav class="navbar">
+
+            <!-- <li><a id="Home" href="#">Home</a></li> -->
+            <li><a id="test" href="#">Learn About Mental Health</a></li>
+            <li><a id="aboutUs" href="#">About Us</a></li>
+            <li><a id="contact" href="contactUs.html">Contact Us</a></li>
+
+
+        </nav>
+        <!-- <div class="searchBar">
+            <input type="text" id="search" placeholder="Search Here">
+        </div> -->
+
+        <div class="login">
+            <div class="loginSpace" id="loginButton">
+                <button id="btn"><a href="login.html">LOGIN / SIGN UP</a></button>
+
+            </div>
+            <div class="loginSpace" id="testButton">
+                <button id="testbtn"><a href="selfTest.html">TAKE A MENTAL HEALTH TEST</a> </button>
+
+
+            </div>
+        </div>
+
+
+    </header>
+    <div class="mainContact">
+        <h1>GET IN TOUCH</h1>
+        <form action="backend.php" class="contactForm">
+
+            <div class="name formElement">
+                Name : <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+            </div>
+
+            <div class="mobileNo formElement">
+                Mobile Number : <input type="text" id="mobileNo" name="mobileNo" placeholder="Enter Your Mobile Number">
+
+
+            </div>
+
+            <div class="mailId formElement">
+                Mail Id : <input type="email" id="mailId" name="mailId" placeholder="Enter Your Mail Id">
+
+            </div>
+
+
+            <div class="submit formElement">
+                <input type="submit" value="Submit Now" id="submit">
+            </div>
+
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

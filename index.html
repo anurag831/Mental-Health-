@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health </title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 3px solid red; */
+            border-bottom: 4px solid black;
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logoSpace,
+        .navbar,
+        .login {
+            /* border: 2px solid blue; */
+        }
+
+        .logoSpace img {
+            margin-top: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .logoSpace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .webName {
+            font-size: 1.42rem;
+        }
+
+        .navbar li {
+            display: flex;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li a {
+            border: 1px solid black;
+            padding: 8px;
+            text-decoration: none;
+            margin: 40px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(203, 195, 185);
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 20px;
+        }
+
+        .loginSpace {
+            margin: 4px;
+        }
+
+        .login button {
+            cursor: pointer;
+            color: white;
+            background-color: #0e0e69;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .login button:hover {
+            background-color: #3d3d91;
+
+        }
+
+        #btn a, #testbtn a{
+            text-decoration: none;
+            color: white;
+        }
+        #btn a:visited, #testbtn a:visited{
+            color: white;
+        }
+
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+
+        /* body */
+
+        .wordSpace {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            margin-top: 20px;
+
+        }
+
+
+        .support {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .supportElements {
+            border: 2px solid black;
+            border-radius: 40px;
+            box-shadow: 8px 8px 20px black;
+            background-color: rgb(243 239 223);
+            font-size: 1.4rem;
+            margin: 50px;
+            padding: 10px;
+            width: 30vw;
+            height: 30vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .supportElements h3 {
+            text-transform: uppercase;
+        }
+
+        .box1,
+        .box2 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .wrapper {
+
+            color: black;
+            font-family: "Roboto", sans-serif;
+            font-size: 3.5rem;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #element1 a,
+        #element2 a {
+            font-size: 1.1rem;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logoSpace">
+
+
+            <a href="index.html"><img src="logo1.jpeg" alt=""></a>
+
+
+
+
+
+        </div>
+
+        <nav class="navbar">
+
+            <!-- <li><a id="Home" href="#">Home</a></li> -->
+            <li><a id="test" href="#">Learn About Mental Health</a></li>
+            <li><a id="aboutUs" href="#">About Us</a></li>
+            <li><a id="contact" href="contactUs.html">Contact Us</a></li>
+
+
+        </nav>
+        <!-- <div class="searchBar">
+            <input type="text" id="search" placeholder="Search Here">
+        </div> -->
+
+        <div class="login">
+            <div class="loginSpace" id="loginButton">
+                <button id="btn"><a href="login.html">LOGIN / SIGN UP</a></button>
+            </div>
+            <div class="loginSpace" id="testButton">
+                <button id="testbtn"><a href="selfTest.html">TAKE A MENTAL HEALTH TEST</a> </button>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="wordSpace">
+        <div class="wrapper">
+            <div class="centeredBox">
+                <span id="typewriter" data-array=""></span>
+                <span class="cursor"></span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="support">
+        <div class="box1">
+            <div class="supportElements" id="element1">
+                <h3>Step 1: Study </h3>
+                <p>Acceptance is the first step towards transformation. Be aware of your mental well being. To get more
+                    information visit </p>
+                <p><a href="#">Learn About Mental Health</a></p>
+            </div>
+
+            <div class="supportElements" id="element2">
+                <h3>Step 2: Test Yourself </h3>
+                <p>Check your emotional stability by taking our mental health test. Use our software for detecting your
+                    particular mental disorder if any.</p>
+                <p><a href="selfTest.html">Take A Mental Health Test</a></p>
+            </div>
+        </div>
+
+        <div class="box2">
+            <div class="supportElements" id="element3">
+                <h3>Step 3: Self Diagnosis </h3>
+                <p>Following the test, our application provides a brief solution to counter the problem most easily.
+                    Take further steps according to the solution set to get improvements in your mental well-being.</p>
+            </div>
+
+            <div class="supportElements" id="element4">
+                <h3>Step 4: Consistency </h3>
+                <p>Only detecting the problems and getting to know the solutions won't help in the betterment of one's
+                    mental condtion. The user should take serious actions based on our given solutions. To track the
+                    changes in your mental health, try to take our test once every month.</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+        // The typewriter element
+        var typeWriterElement = document.getElementById('typewriter');
+
+        // The TextArray: 
+        var textArray = ["FIND SUPPORT THAT WORKS FOR YOU"];
+
+        // You can also do this by transfering it through a data-attribute
+        // var textArray = typeWriterElement.getAttribute('data-array');
+
+
+        // function to generate the backspace effect 
+        function delWriter(text, i, cb) {
+            if (i >= 0) {
+                typeWriterElement.innerHTML = text.substring(0, i--);
+                // generate a random Number to emulate backspace hitting.
+                var rndBack = 10 + Math.random() * 100;
+                setTimeout(function () {
+                    delWriter(text, i, cb);
+                }, rndBack);
+            } else if (typeof cb == 'function') {
+                setTimeout(cb, 100);
+            }
+        };
+
+        // function to generate the keyhitting effect
+        function typeWriter(text, i, cb) {
+            if (i < text.length + 1) {
+                typeWriterElement.innerHTML = text.substring(0, i++);
+                // generate a random Number to emulate Typing on the Keyboard.
+                var rndTyping = 250 - Math.random() * 150;
+                setTimeout(function () {
+                    typeWriter(text, i++, cb)
+                }, rndTyping);
+            } else if (i === text.length + 1) {
+                setTimeout(function () {
+                    delWriter(text, i, cb)
+                }, 1000);
+            }
+        };
+
+        // the main writer function
+        function StartWriter(i) {
+            if (typeof textArray[i] == "undefined") {
+                setTimeout(function () {
+                    StartWriter(0)
+                }, 1000);
+            } else if (i < textArray[i].length + 1) {
+                typeWriter(textArray[i], 0, function () {
+                    StartWriter(i + 1);
+                });
+            }
+        };
+        // wait one second then start the typewriter
+        setTimeout(function () {
+            StartWriter(0);
+        }, 1000);
+    </script>
+
+</body>
+
+</html>

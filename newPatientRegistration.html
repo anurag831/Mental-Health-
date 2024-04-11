@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Patient Registration</title>
+    <style>
+         * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 3px solid red; */
+            border-bottom: 4px solid black;
+            /* background-color: white; */
+            display: flex;
+            justify-content:space-around;
+        }
+
+        .logoSpace,
+        .navbar,
+        .login {
+            /* border: 2px solid blue; */
+        }
+
+        .logoSpace img {
+            margin-top: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .logoSpace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .webName {
+            font-size: 1.42rem;
+        }
+
+        .navbar li {
+            display: flex;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li a {
+            border: 1px solid black;
+            padding: 8px;
+            text-decoration: none;
+            margin: 40px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(203, 195, 185);
+
+        }
+
+        
+
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+        /* body */
+        .patientForm{
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .patientForm h1{
+            margin: 10px;
+            margin-bottom: 20px;
+        }
+        .elements{
+            margin: 20px;
+            font-size: 1.7rem;
+        }
+        .elements input{
+            height: 35px;
+            width: 270px;
+            border-radius: 20px;
+
+        }
+        ::-webkit-input-placeholder {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        input[type=date]{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        #submit, #reset{
+            cursor: pointer;
+            height: 30px;
+            width: auto;
+            padding: 5px;
+            font-size: 1rem;
+            
+            border-radius: 10px;
+        }
+        #submit:hover, #reset:hover{
+            background-color: rgb(187, 203, 207);
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <div class="logoSpace">
+
+
+            <a href="index.html"><img src="logo1.jpeg" alt=""></a>
+
+
+
+
+
+        </div>
+
+        <nav class="navbar">
+
+            <!-- <li><a id="Home" href="#">Home</a></li> -->
+            <li><a id="test" href="#">Learn About Mental Health</a></li>
+            <li><a id="aboutUs" href="#">About Us</a></li>
+            <li><a id="contact" href="contactUs.html">Contact Us</a></li>
+
+
+        </nav>
+        
+
+    </header>
+
+    <div class="patientForm">
+        <h1>
+            NEW PATIENT REGISTRATION
+        </h1>
+
+        <form action="#" class="registrationForm">
+            <div class="elements" id="element1">
+                Patient Name: <input type="text" id="name" name="name" placeholder="Enter The Name">
+            </div>
+            <div class="elements" id="element2">
+                Adhaar Number: <input type="text" id="adhaar" name="adhaar" placeholder="Enter Adhaar Number">
+            </div>
+            <div class="elements" id="element3">
+                Date of Birth: <input type="date" id="dob" name="dob" >
+            </div>
+            
+            <div class="elements" id="element4">
+                Mobile Number: <input type="text" id="number" name="number" placeholder="Enter Mobile Number">
+            </div>
+            <div class="elements" id="element5">
+                Email Id: <input type="email" id="email" name="email" placeholder="Enter Email Id">
+            </div>
+            <div class="elements" id="element5">
+                <input type="submit" value="Register" id="submit">
+            </div>
+            <div class="elements" id="element6">
+                <input type="reset" value="Reset All" id="reset">
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take A Mental Health Test</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            /* border: 3px solid red; */
+            border-bottom: 4px solid black;
+            /* background-color: white; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .logoSpace,
+        .navbar,
+        .login {
+            /* border: 2px solid blue; */
+        }
+
+        .logoSpace img {
+            margin-top: 20px;
+            height: 140px;
+            width: 140px;
+        }
+
+        .logoSpace {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .webName {
+            font-size: 1.42rem;
+        }
+
+        .navbar li {
+            display: flex;
+
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar li a {
+            border: 1px solid black;
+            padding: 8px;
+            text-decoration: none;
+            margin: 40px;
+            font-size: 1.5rem;
+            color: black;
+            font-weight: bold;
+
+            border-radius: 20px;
+
+        }
+
+        .navbar li a:hover {
+            background-color: rgb(203, 195, 185);
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            margin-right: 20px;
+        }
+
+        .loginSpace {
+            margin: 4px;
+        }
+
+        .login button {
+            cursor: pointer;
+            color: white;
+            background-color: #0e0e69;
+            padding: 8px;
+            border-radius: 6px;
+        }
+
+        .login button:hover {
+            background-color: #3d3d91;
+
+        }
+
+        #btn a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        #btn a:visited {
+            color: white;
+        }
+
+
+        header::before {
+            background: url(background.jpg) no-repeat center center/cover;
+            background-size: 100% 100%;
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+
+        /* body  */
+
+        .mainBody {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .mainBody h1{
+            margin: 20px;
+            font-size: 3rem;
+        }
+
+        .questions {
+            font-size: 2rem;
+            margin: 20px;
+            margin-top: 50px;
+        }
+
+        form div span {
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+
+        .options{
+            margin: 40px;
+            
+            padding: 5px;
+            background-color: #dfdfff;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .options:hover{
+           
+            background-color: #bbbbe3;
+        }
+        .questions p{
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+        }
+        #submit, #reset{
+            cursor: pointer;
+            height: 30px;
+            width: auto;
+            padding: 3px;
+            font-size: 1.2rem;
+            
+            border-radius: 10px;
+        }
+        #submit:hover, #reset:hover{
+            background-color: rgb(242, 222, 196);
+        }
+        #element1, #element2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <div class="logoSpace">
+
+
+            <a href="index.html"><img src="logo1.jpeg" alt=""></a>
+
+
+
+
+
+        </div>
+
+        <nav class="navbar">
+
+            <!-- <li><a id="Home" href="#">Home</a></li> -->
+            <li><a id="test" href="#">Learn About Mental Health</a></li>
+            <li><a id="aboutUs" href="#">About Us</a></li>
+            <li><a id="contact" href="contactUs.html">Contact Us</a></li>
+
+
+        </nav>
+        <!-- <div class="searchBar">
+            <input type="text" id="search" placeholder="Search Here">
+        </div> -->
+
+        <div class="login">
+            <div class="loginSpace" id="loginButton">
+                <button id="btn"><a href="login.html">LOGIN / SIGN UP</a></button>
+            </div>
+
+        </div>
+
+
+    </header>
+    <div class="mainBody">
+
+        <h1>Take A Mental Health Test</h1>
+
+        <form action="#" class="test">
+
+            <div class="questions" id="question1">
+               1. Little interest or pleasure in doing things 
+                <p>
+                    <span class="options">
+                        <input type="radio" id="1-a" name="first" value="NOT AT ALL">
+                        <label for="1-a"><span>NOT AT ALL</span></label>
+                    </span>
+                    <span class="options">
+                    <input type="radio" id="1-b" name="first" value="SEVERAL DAYS">
+                    <label for="1-b"><span>SEVERAL DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="1-c" name="first" value="c">
+                        <label for="1-c"><span>MORE THAN HALF THE DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="1-d" name="first" value="d">
+                        <label for="1-d"><span>NEARLY EVERY DAY</span></label>
+
+                    </span>
+
+                </p>
+            </div>
+
+            <div class="questions" id="question2">
+                2. Feeling down, depressed, or hopeless
+                <p>
+                    <span class="options">
+                        <input type="radio" id="2-a" name="second" value="NOT AT ALL">
+                        <label for="2-a"><span>NOT AT ALL</span></label>
+                    </span>
+                    <span class="options">
+                    <input type="radio" id="2-b" name="second" value="SEVERAL DAYS">
+                    <label for="2-b"><span>SEVERAL DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="2-c" name="second" value="MORE THAN HALF THE DAYS">
+                        <label for="2-c"><span>MORE THAN HALF THE DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="2-d" name="second" value="NEARLY EVERY DAY">
+                        <label for="2-d"><span>NEARLY EVERY DAY</span></label>
+
+                    </span>
+
+                </p>
+            </div>
+
+            <div class="questions" id="question3">
+                3. Trouble falling or staying asleep, or sleeping too much
+                <p>
+                    <span class="options">
+                        <input type="radio" id="3-a" name="third" value="NOT AT ALL">
+                        <label for="3-a"><span>NOT AT ALL</span></label>
+                    </span>
+                    <span class="options">
+                    <input type="radio" id="3-b" name="third" value="SEVERAL DAYS">
+                    <label for="3-b"><span>SEVERAL DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="3-c" name="third" value="MORE THAN HALF THE DAYS">
+                        <label for="3-c"><span>MORE THAN HALF THE DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="3-d" name="third" value="NEARLY EVERY DAY">
+                        <label for="3-d"><span>NEARLY EVERY DAY</span></label>
+
+                    </span>
+
+                </p>
+            </div>
+
+            <div class="questions" id="question4">
+                4. Feeling tired or having little energy
+                <p>
+                    <span class="options">
+                        <input type="radio" id="4-a" name="forth" value="NOT AT ALL">
+                        <label for="4-a"><span>NOT AT ALL</span></label>
+                    </span>
+                    <span class="options">
+                    <input type="radio" id="4-b" name="forth" value="SEVERAL DAYS">
+                    <label for="4-b"><span>SEVERAL DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="4-c" name="forth" value="MORE THAN HALF THE DAYS">
+                        <label for="4-c"><span>MORE THAN HALF THE DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="4-d" name="forth" value="NEARLY EVERY DAY">
+                        <label for="4-d"><span>NEARLY EVERY DAY</span></label>
+
+                    </span>
+
+                </p>
+            </div>
+
+            <div class="questions" id="question5">
+                5. Poor appetite or overeating
+                <p>
+                    <span class="options">
+                        <input type="radio" id="5-a" name="fifth" value="NOT AT ALL">
+                        <label for="5-a"><span>NOT AT ALL</span></label>
+                    </span>
+                    <span class="options">
+                    <input type="radio" id="5-b" name="fifth" value="SEVERAL DAYS">
+                    <label for="5-b"><span>SEVERAL DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="5-c" name="fifth" value="MORE THAN HALF THE DAYS">
+                        <label for="5-c"><span>MORE THAN HALF THE DAYS</span></label>
+
+                    </span>
+                    <span class="options">
+                        <input type="radio" id="5-d" name="fifth" value="NEARLY EVERY DAY">
+                        <label for="5-d"><span>NEARLY EVERY DAY</span></label>
+
+                    </span>
+
+                </p>
+            </div>
+            <div class="questions" id="element1">
+                <input type="submit" value="Submit" id="submit">
+            </div>
+            <div class="questions" id="element2">
+                <input type="reset" value="Reset All" id="reset">
+            </div>
+            
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
